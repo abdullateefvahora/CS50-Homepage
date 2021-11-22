@@ -46,8 +46,8 @@ nav{
     width: 100%;
 }
 /*welcome to my website*/
-.text-box{
-    width: 90%;
+.welcome{
+    width: 80%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -55,13 +55,25 @@ nav{
     position: absolute;
     text-align: center;
 }
-.text-box h1{
+.welcome h1{
     font-size: 52px;
 }
-.text-box p{
-    font-size: 16px;
-    width: 90%;
+.intro{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
     text-align: center;
+}
+.intro p{
+    font-size: 16px;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.intro p:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 /*hide menu in desktop*/
@@ -73,7 +85,7 @@ nav .close-btn{
 }
 
 @media(max-width: 700px){
-    .text-box h1{
+    .welcome h1{
         font-size: 26px;
     }
     .nav-links ul li{
@@ -149,7 +161,7 @@ p{
     box-sizing: border-box;
     transition: 0.3s;
 }
-h3{
+h5{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
@@ -179,7 +191,7 @@ h3{
      overflow: hidden;
 }
 .project-col img{
-    height: 320px;
+    height: 460px;
 }
 .layer{
     background: transparent;
