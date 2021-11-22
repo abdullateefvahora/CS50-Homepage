@@ -1,0 +1,197 @@
+/*for the header banner*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*space out menu items*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*spaced relative to whole screen*/
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+/*get rid of link lines and bullet points*/
+.nav-links ul li{
+    list-style: none;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*give red line underneath menu items*/
+.nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 300ms;
+}
+/*only show line when hovered*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*welcome to my website*/
+.text-box{
+    width: 90%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 52px;
+}
+.text-box p{
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+}
+
+/*hide menu in desktop*/
+nav .menu-btn{
+    display: none;
+}
+nav .close-btn{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 26px;
+    }
+    .nav-links ul li{
+        display: block;
+        left: -25px;
+    }
+    .nav-links ul li a{
+        font-size: 13px;
+    }
+    /*for phone menu */
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    /*for close menu */
+    nav .close-btn{
+        display: block;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        background: transparent;
+    }
+    nav .menu-btn{
+        margin: 20px;
+        color: white;
+        display: block;
+        cursor: pointer;
+        align-content: right;
+        border: none;
+        background: transparent;
+        margin: none;
+    }
+}
+
+/* education  */
+.education{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.column-edu{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.column-edu:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* projects */
+.projects{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.project-col{
+     flex-basis: 31%;
+     border-radius: 10px;
+     margin-bottom: 30px;
+     position: relative;
+     overflow: hidden;
+}
+.project-col img{
+    height: 320px;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);    
+}
+
+
