@@ -250,8 +250,9 @@ h5{
 }
 /* Project text boxes */
 .text-box{
-    width: 100%;
-    margin: auto;
+    transform: translateX(3%);
+    width: 90%;
+    margin: 2.5%;
     padding-top: 50px;
     text-align: start;
     font-size: 16px;
@@ -272,7 +273,6 @@ h5{
     display: inline-block;
     text-decoration: none;
     color: black;
-    /* border: 1px solid black; */
     padding: 6px 34px;
     font-size: 13px;
     background: transparent;
@@ -287,4 +287,13 @@ h5{
     transition: 0.7s;
     color: white;
     text-decoration: none;
+}
+
+/* experience page */
+.workplace{
+    font-size:x-large;
+}
+.duration{
+    font-size: large;
+    font-weight: lighter;
 }
